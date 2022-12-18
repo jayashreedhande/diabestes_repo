@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diebetes Prediction</title>
+</head>
+
+<body style="background-color: rgb(71, 80, 80);">
+    <center>
+        <h1 style="color:rgb(90, 18, 30);">Diebetes Prediction </h1>
+        <form method="POST" action="{{url_for('prediction')}}">
+            
+            <div class="headingsContainer">
+                <h3 >Fill Above Details To Predict Diabetes</h3>
+            </div>
+    
+            
+            
+            <div class="mainContainer">
+                
+                <label for="Glucose" style="color:Tomato;"><b>Glucose (mg/dL)</b></label><br>
+                <input type="number" placeholder="Values Between 1 to 200" name="Glucose" required>
+                <br><br>
+                
+                <label for="BloodPressure" style="color:Tomato;"><b>Blood Pressure (mmHg)</b></label><br>
+                <input step="any",type="number" placeholder="Values Between 1 to 200" name="BloodPressure" required>
+                
+                <br><br>
+                
+                <label for="SkinThickness" style="color:Tomato;"><b>Skin Thickness (mm)</b></label><br>
+                <input step="any",  type="number" placeholder="Values Between 1 to 80" name="SkinThickness" required>
+                <br><br>
+
+                <label for="Insulin" style="color:Tomato;"><b>Insulin (mu U/ml) </b></label><br>
+                <input type="number" placeholder="Values Between 1 to 850" name="Insulin" required>
+                <br><br>
+
+                <label for="BMI" style="color:Tomato;"><b>BMI (kg/m2)</b></label><br>
+                <input type="number" placeholder="Values Between 1 to 80" name="BMI" required>
+                <br><br>
+
+                <label for="DiabetesPedigreeFunction" style="color:Tomato;"><b>Diabetes Pedigree Function</b></label><br>
+                <input step="any", type="number" placeholder="Values Between 0 to 3.5" name="DiabetesPedigreeFunction" required>
+                <br><br>
+
+                <label for="Age" style="color:Tomato;"><b>Age </b> </label><br>
+                <input step="any", type="number" placeholder="Enter Age" name="Age" required>
+                <br><br>
+
+               
+            
+                
+                <input type="submit" value="SUBMIT">
+                <br><br>
+                <!-- <h3 style="color:orange;">From above information  Phone Price will be<b style="color: black;"> {{ prediction }} /- Rs.</b> Only </h3> -->
+            </div>
+        </form>
+    </center>
+    
+
+
+</body>
+</html>
